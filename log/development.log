@@ -2017,6 +2017,7 @@ Processing by ProductsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
 Completed   in 13696ms (ActiveRecord: 0.5ms)
+<<<<<<< HEAD
 
 
 Started GET "/products/23" for 65.223.155.202 at 2018-09-04 21:44:31 +0000
@@ -2027,3 +2028,5 @@ Processing by ProductsController#show as HTML
   [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 23]]
 [active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
 Completed 200 OK in 45ms (Views: 16.4ms | ActiveRecord: 0.7ms)
+=======
+>>>>>>> e7b100c7f81f3c57b8b5107cc2855e492c11155d
