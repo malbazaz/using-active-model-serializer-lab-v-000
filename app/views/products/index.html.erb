@@ -11,7 +11,7 @@ $(function() {
     var id = $(this).data("id");
     $.get("/products/" + id + "/description", function(data) {
         var inventoryText = "<strong>Available</strong>";
-        if(inventory === "false"){
+        if(data["inventory"] === "false"){
           inventoryText = "<strong>Sold Out</strong>";
         }
         var descriptionText = "<p>" + description + "</p><p>" + inventoryText + "</p>";
